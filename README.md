@@ -1,4 +1,4 @@
-# Game list
+# Retro Games
 The collection of retro games
 
 1. [Doodle Jump](https://doodlejump.io/)
