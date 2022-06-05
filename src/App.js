@@ -7,7 +7,8 @@ import useLocalStorage from 'use-local-storage'
 import {
   createTheme,
   NextUIProvider,
-  Switch
+  Switch,
+  Text
 
 
 } from "@nextui-org/react";
@@ -40,12 +41,16 @@ export default function App() {
     setIsDarkTheme(!isDarkTheme);
   };
 
+
   return (
-    <NextUIProvider theme={isDarkTheme ? lightTheme : darkTheme}>
+    <NextUIProvider theme={isDarkTheme === false ? lightTheme : darkTheme}>
+
       <Container sm>
-        <Switch color="secondary" css={{ bottom: 10, right: 10, position: 'fixed', zIndex: "999999" }} checked={!isDarkTheme} onChange={changeTheme} />
+        <Text>{isDarkTheme}</Text>
+        <Switch color="secondary" css={{ bottom: 10, right: 10, position: 'fixed', zIndex: "999999" }} checked={isDarkTheme} onChange={changeTheme} />
         <Header />
         <GameList />
+
         <Footer />
       </Container>
 
