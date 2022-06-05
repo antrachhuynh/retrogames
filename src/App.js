@@ -41,9 +41,9 @@ export default function App() {
   };
 
   return (
-    <NextUIProvider theme={isDarkTheme ? darkTheme : lightTheme}>
+    <NextUIProvider theme={isDarkTheme ? lightTheme : darkTheme}>
       <Container sm>
-        <Switch color="secondary" css={{ bottom: 10, right: 10, position: 'fixed', zIndex: "999999" }} checked={isDarkTheme} onChange={changeTheme} />
+        <Switch color="secondary" css={{ bottom: 10, right: 10, position: 'fixed', zIndex: "999999" }} checked={!isDarkTheme} onChange={changeTheme} />
         <Header />
         <GameList />
         <Footer />
