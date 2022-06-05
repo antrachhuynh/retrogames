@@ -29,7 +29,7 @@ const darkTheme = createTheme({
 
 export default function App() {
   // The dark theme is used by default
-  const [isDarkTheme, setIsDarkTheme] = useLocalStorage(false);
+  const [isDarkTheme, setIsDarkTheme] = useLocalStorage(true);
 
 
 
