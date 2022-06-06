@@ -48,22 +48,21 @@ export default function GameList() {
                                 <Card.Image
                                     objectFit="cover"
                                     src={item.thumb}
-                                    width="100%"
-                                    height={140}
+                                    width='100%'
+
                                     alt={item.description}
                                 />
                             </Link>
                         </Card.Body>
                         <Card.Footer
-                            justify="flex-start"
-
+                            css={{ textAlign: "center" }}
                         >
                             <Link target='_blank' href={item.link}>
                                 <Row
 
 
-                                    wrap="wrap" justify="space-between">
-                                    <Text size="1rem" h2>{item.name}</Text>
+                                    wrap="wrap">
+                                    <Text className="game-title" h2>{item.name}</Text>
 
                                 </Row>
                             </Link>

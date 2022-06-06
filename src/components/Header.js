@@ -8,7 +8,7 @@ export const Header = () => (
                 src="https://cutewallpaper.org/21/retro-game-wallpapers/1920x1080-Retro-Gaming-Background-131-Retro-Hd-Wallpapers-.jpg"
                 height={250}
                 width="100%"
-                alt="Card example background"
+                alt="Retro Games"
             />
         </Card.Body>
         <Card.Footer

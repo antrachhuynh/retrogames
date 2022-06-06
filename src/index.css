@@ -5,6 +5,7 @@
 
 body {
   margin: 0;
+  font-size: 19px;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -14,4 +15,8 @@ body {
   font-family: 'press start', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif !important;
+}
+
+.game-title {
+  font-size: 0.9rem;
 }

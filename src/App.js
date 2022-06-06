@@ -8,7 +8,7 @@ import {
   createTheme,
   NextUIProvider,
   Switch,
-  Text
+
 
 
 } from "@nextui-org/react";
@@ -46,7 +46,7 @@ export default function App() {
     <NextUIProvider theme={isDarkTheme === false ? lightTheme : darkTheme}>
 
       <Container sm>
-        <Text>{isDarkTheme}</Text>
+
         <Switch color="secondary" css={{ bottom: 10, right: 10, position: 'fixed', zIndex: "999999" }} checked={isDarkTheme} onChange={changeTheme} />
         <Header />
         <GameList />
